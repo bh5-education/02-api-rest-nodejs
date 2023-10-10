@@ -1,0 +1,29 @@
+
+
+# @name create-transaction
+POST http://localhost:3333/transactions
+Content-Type: application/json
+
+{
+  "title": "Monitor 32x9",
+  "amount": 6000,
+  "type": "debit"
+}
+
+###
+
+# @name get-all-transactions
+GET http://localhost:3333/transactions
+
+###
+
+
+# @name get-transaction
+GET http://localhost:3333/transactions/0611f70b-f9d1-4a1d-aaca-4d325684862e
+
+###
+
+# @name get-summary
+GET http://localhost:3333/transactions/summary
+
+###
